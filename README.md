@@ -96,10 +96,15 @@ git clone https://github.com/DevOPhost/organize.git
 cd organize
 
 python -m venv .venv
+
+# macOS/Linux
 source .venv/bin/activate
 
+# Windows (PowerShell)
+.venv\Scripts\Activate.ps1
+
 pip install -e ".[dev]"
-pytest
+python -m pytest
 ```
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) if you want to open a pull request.
@@ -202,10 +207,15 @@ git clone https://github.com/DevOPhost/organize.git
 cd organize
 
 python -m venv .venv
+
+# macOS/Linux
 source .venv/bin/activate
 
+# Windows (PowerShell)
+.venv\Scripts\Activate.ps1
+
 pip install -e ".[dev]"
-pytest
+python -m pytest
 ```
 
 Veja o arquivo [CONTRIBUTING.md](CONTRIBUTING.md) se quiser abrir um pull request.
