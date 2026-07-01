@@ -32,6 +32,12 @@ def test_extension_matching_is_case_insensitive():
     assert get_category(".MP4") == "videos"
 
 
+def test_ebook_extensions_use_ebook_category():
+    assert get_category(".epub") == "ebooks"
+    assert get_category(".mobi") == "ebooks"
+    assert get_category(".AZW3") == "ebooks"
+
+
 # --- organizer ---
 
 def test_moves_files_into_correct_subfolders(tmp_path):
