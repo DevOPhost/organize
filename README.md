@@ -43,6 +43,12 @@ Requires Python 3.10 or newer.
 pip install git+https://github.com/DevOPhost/organize.git
 ```
 
+Confirm the command is available:
+
+```bash
+organize-files --version
+```
+
 ## Usage
 
 ```bash
@@ -152,6 +158,12 @@ Requer Python 3.10 ou superior.
 
 ```bash
 pip install git+https://github.com/DevOPhost/organize.git
+```
+
+Confirme que o comando está disponível:
+
+```bash
+organize-files --version
 ```
 
 ## Como usar
