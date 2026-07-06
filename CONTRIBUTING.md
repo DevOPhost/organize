@@ -8,18 +8,25 @@ Thanks for wanting to help. A few things before you open a PR:
 git clone https://github.com/DevOPhost/organize.git
 cd organize
 python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
+
+# macOS/Linux
+source .venv/bin/activate
+
+# Windows (PowerShell)
+.venv\Scripts\Activate.ps1
+
 pip install -e ".[dev]"
 ```
 
-## Running the tests
+## Running the checks
 
 ```bash
-pytest
+python -m pytest
+python -m ruff check .
 ```
 
-All tests need to pass before I'll merge anything. If you're adding a feature,
-add tests for it too — I'll ask if you don't.
+All tests and lint checks need to pass before I'll merge anything. If you're
+adding a feature, add tests for it too — I'll ask if you don't.
 
 ## A few ground rules
 
